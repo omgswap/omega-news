@@ -1,0 +1,110 @@
+# theme basic info
+theme_info:
+  name: Ǒmega Protocol
+  version: 1.1.2
+  author: Ǒmega
+  repository: https://github.com/omgswap
+
+# favicon
+favicon: images/favicon.png
+
+# avatar
+avatar: images/avatar.png
+
+# navigation menu
+menu:
+  Home: /
+  Listing: /categories/Listing
+  News: /categories/News
+  Blog: /categories/Blog
+  # Archives: /archives
+  # About: /about
+  # Links: /links
+  # ...
+
+# RSS
+rss:
+  enable: true
+
+# comment plugin
+comments:
+  # Valine https://github.com/xCss/Valine
+  valine:
+    enable: false
+    appid:                # your leancloud application appid
+    appkey:               # your leancloud application appkey
+    meta:                 # comment input meta, type: Array, values: ['nick','mail','link']
+    placeholder:          # your placeholder
+
+  # Gitalk https://github.com/gitalk/gitalk
+  gitalk:
+    enable: false
+    github_id:             # GitHub repo owner
+      repository:          # Repository name to store issues
+    client_id:             # GitHub Application Client ID
+    client_secret:         # GitHub Application Client Secret
+
+# website count
+website_count:
+  # busuanzi http://ibruce.info/2015/04/04/busuanzi/
+  busuanzi_count:
+    enable: false
+    site_uv: false
+    site_pv: false
+    page_pv: false
+
+# Local Search
+# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
+local_search:
+  enable: true
+
+  # If auto, trigger search by changing input.
+  # If manual, trigger search by pressing enter key or search button.
+  trigger: auto  # values: auto | manual
+
+  # Unescape html strings to the readable one.
+  unescape: false
+
+  # Preload the search data when the page loads.
+  preload: false
+
+# Code Copy
+code_copy:
+  enable: true
+  style: flat  # values: default | flat | mac
+
+# sidebar tools
+side_tools:
+  enable: true
+  position: right  # values: left | right
+
+# back to top
+back2top:
+  enable: true
+  position: right  # values: left | right
+
+# Table of Contents in the Sidebar
+toc:
+  enable: true
+
+  # Automatically add list number to toc.
+  number: true
+
+  # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
+  expand_all: true
+
+# magic theme
+magic:
+  enable: true
+  scale: false
+  shadow: true
+  sidebar:
+    enable: false
+    fixed: true
+    position: right  # values: left | right
+
+# Post wordcount display settings
+# Dependencies: https://github.com/willin/hexo-wordcount
+post_wordcount:
+  wordcount: true  # word count, one article
+  min2read: true   # time to read, one article

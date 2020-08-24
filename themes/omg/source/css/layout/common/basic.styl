@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400,500,600,700,800,900");
+@require 'variables.styl'
+@require 'animated.styl'
+@require 'magic-theme.styl'
+
+html, body {
+  font-family: 'Source Sans Pro';
+  margin: 0;
+  padding: 0;
+  color: var(--normal-text-color);
+  if (hexo-config('magic.enable') == true) {
+    background: var(--magic-background-color);
+  } else {
+    background: var(--background-color);
+  }
+  font-size: $default-font-size;
+  font-weight: $default-font-weight;
+  line-height: $default-font-line-height;
+}
+
+::selection {
+  background: var(--selection-color);
+  color: #fff;
+}
+
+ul,
+li,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--normal-text-color);
+}
+
+a:hover, a:active {
+  color: var(--primary-color);
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  background: var(--background-color);
+
+  if (hexo-config('magic.enable') == true) {
+    magic-style(1.1, 1.1);
+  } else {
+    border: 1px solid var(--border-color);
+  }
+
+  &:hover {
+    transition();
+    color: var(--background-color);
+    background: var(--primary-color);
+  }
+}

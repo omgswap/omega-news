@@ -1,0 +1,18 @@
+<div class="tools-container">
+    <ul class="tools-list">
+        <% if (theme.local_search.enable) { %>
+            <li class="search popup-trigger">
+                <i class="fa fa-search"></i>
+            </li>
+            <%- js('js/local-search.js') %>
+        <% } %>
+        <li class="mode-toggle">
+            <i class="fa fa-moon-o"></i>
+        </li>
+        <% if (theme.local_search.enable && config.feed) { %>
+            <li class="rss">
+                <a href="<%= '/' + config.feed.path %>" target="_blank"><i class="fa fa-rss"></i></a>
+            </li>
+        <% } %>
+    </ul>
+</div>

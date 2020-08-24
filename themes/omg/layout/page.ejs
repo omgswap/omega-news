@@ -1,0 +1,65 @@
+<div class="page-template">
+    <div class="page-top">
+        <%- partial('_partial/header') %>
+    </div>
+
+    <div class="page-middle ">
+
+        <main class="main-content normal-code-theme">
+
+            <div class="main-content-left">
+                <% if (is_home()) { %>
+                    <%- partial('home-content') %>
+
+                <% } else if (is_archive()) { %>
+                    <%- partial('archive-content') %>
+
+                <% } else if (is_post()) { %>
+                    <%- partial('article-content') %>
+
+                <% } else if (is_category()) { %>
+                    <%- partial('category-content') %>
+
+                <% } else if (is_tag()) { %>
+                    <%- partial('tag-content') %>
+
+                <% } else if (page.title == 'about') { %>
+                    <%- partial('about') %>
+
+                <% } else if (page.title == 'links') { %>
+                    <%- partial('links') %>
+                <% } %>
+
+            </div>
+
+            <% if (theme.magic.enable && theme.magic.sidebar.enable) { %>
+                <div class="main-content-right">
+                    <%- partial('_partial/sidebar') %>
+                </div>
+            <% } %>
+
+        </main>
+
+        <div class="sidebar-tools">
+            <%- partial('_partial/tools') %>
+        </div>
+
+        <% if (theme.back2top.enable) { %>
+            <div class="scroll-to-top">
+                <ul>
+                    <li>
+                        <!--<i class="fa fa-caret-up"></i>-->
+                        <span class="scroll-percent"></span>
+                    </li>
+                </ul>
+            </div>
+        <% } %>
+    </div>
+
+    <div class="page-bottom">
+        <%- partial('_partial/footer') %>
+    </div>
+</div>
+<% if (theme.local_search.enable) { %>
+    <%- partial('_partial/local-search') %>
+<% } %>
