@@ -17,6 +17,9 @@ Link: https://twitter.com/coingecko/status/1299736067965415426
 
 Distribution starts soon.
 
+## Buy or Join in pool now
+Buy: https://uniswap.info/pair/0x5a4b7bc01b1f7639f335c197821aae6f6b451d8b
+
 ## Useful Links
   + Website: [www.omgswap.in](https://omgswap.in)
   + DeFi: [omgswap.com](https://omgswap.com)
