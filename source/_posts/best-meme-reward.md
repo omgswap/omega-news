@@ -1,6 +1,6 @@
 ---
-title: Best Comment Reward
-date: 2020-08-29 22:25:50
+title: Best Meme Reward
+date: 2020-08-29 22:33:26
 author: Omega
 img: /images/omega-banner.png
 categories: News
@@ -9,7 +9,7 @@ tags:
 ---
 ## Best Comment Reward
 Dear Omegans,
-Everyone Omegans comment here and submit your comment link in group, Best 15 comment-er  will get 1000 OPM and 500 pDAI.
+Omegans post meme pictures or gif here and submit your post link in group, Best 10 meme creators will get 1000 OPM and 500 pDAI.
 Must need to mention hashtags <b>#OPM #pDAI #Omega #DeFi #OMGSwap #ODEX</b> on comments.
 
 Link: https://twitter.com/CoinMarketCap/status/1299487216213929984
